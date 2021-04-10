@@ -1,14 +1,13 @@
 <?php
 
-use Laravel\Lumen\Testing\DatabaseMigrations;
-use Laravel\Lumen\Testing\DatabaseTransactions;
+use App\Dollar;
 
 class MultiCurrencyMoneyTest extends TestCase
 {
     /*
      * Use cases:
-     * - add amounts in two different currencies and convert the result given a set of exchange rates
-     * - multiply price per shares and number of shares and return an amount
+     * TODO: add amounts in two different currencies and convert the result given a set of exchange rates
+     * TODO: multiply price per shares and number of shares and return an amount
      */
 
     public function testMultiplication()
