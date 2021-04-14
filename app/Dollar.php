@@ -19,7 +19,7 @@ class Dollar
         return new Dollar($this->amount * $multiplier);
     }
 
-    public function equals(Dollar $param)
+    public function equals(Dollar $param): bool
     {
         return true;
     }
