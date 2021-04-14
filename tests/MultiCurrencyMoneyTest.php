@@ -12,6 +12,8 @@ class MultiCurrencyMoneyTest extends TestCase
      * - TODO: Fix encapsulation issue. Dollar has public properties
      * - Compare two Dollar objects (equals())
      * - TODO: hashCode() (applicable?)
+     * - TODO: compare with null
+     * - TODO: compare with other objects
      */
 
     public function testMultiplication()
