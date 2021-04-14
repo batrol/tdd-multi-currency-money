@@ -2,6 +2,8 @@
 
 namespace App;
 
+use JetBrains\PhpStorm\Pure;
+
 class Dollar
 {
 
@@ -12,8 +14,8 @@ class Dollar
         $this->amount = $amount;
     }
 
-    public function times(int $multiplier): void
+    #[Pure] public function times(int $multiplier): Dollar
     {
-        $this->amount *= $multiplier;
+        return new Dollar($this->amount * $multiplier);
     }
 }

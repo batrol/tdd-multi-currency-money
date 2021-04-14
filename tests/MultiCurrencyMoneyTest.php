@@ -7,20 +7,20 @@ class MultiCurrencyMoneyTest extends TestCase
     /*
      * Use cases:
      * - TODO: add amounts in two different currencies and convert the result given a set of exchange rates
-     * - multiply price per shares and number of shares and return an amount
-     * - TODO: Fix multiplication issue. Amount in dollars increases on each multiplication.
+     * - Multiply price per shares and number of shares and return an amount
+     * - Fix multiplication issue. Amount in dollars increases on each multiplication.
      * - TODO: Fix encapsulation issue. Dollar has public properties
      */
 
     public function testMultiplication()
     {
         $dollar = new Dollar(5);
-        $dollar->times(2);
+        $product = $dollar->times(2);
 
-        $this->assertEquals(10, $dollar->amount);
+        $this->assertEquals(10, $product->amount);
 
-        $dollar->times(3);
+        $product = $dollar->times(3);
 
-        $this->assertEquals(15, $dollar->amount);
+        $this->assertEquals(15, $product->amount);
     }
 }
