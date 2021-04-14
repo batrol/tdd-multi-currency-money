@@ -10,6 +10,10 @@ class MultiCurrencyMoneyTest extends TestCase
      * - Multiply price per shares and number of shares and return an amount
      * - Fix multiplication issue. Amount in dollars increases on each multiplication.
      * - TODO: Fix encapsulation issue. Dollar has public properties
+     * - Compare two Dollar objects (equals())
+     * - TODO: hashCode() (applicable?)
+     * - TODO: compare with null
+     * - TODO: compare with other objects
      */
 
     public function testMultiplication()
@@ -22,5 +26,11 @@ class MultiCurrencyMoneyTest extends TestCase
         $product = $dollar->times(3);
 
         $this->assertEquals(15, $product->amount);
+    }
+
+    public function testEquality()
+    {
+        $this->assertTrue((new Dollar(5))->equals(new Dollar(5)));
+        $this->assertFalse((new Dollar(5))->equals(new Dollar(6)));
     }
 }
