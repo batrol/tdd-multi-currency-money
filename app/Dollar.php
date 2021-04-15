@@ -4,7 +4,7 @@ namespace App;
 
 use JetBrains\PhpStorm\Pure;
 
-class Dollar
+class Dollar extends Money
 {
 
     private int $amount = 0;

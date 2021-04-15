@@ -17,7 +17,7 @@ class MultiCurrencyMoneyTest extends TestCase
      * - TODO: compare with other objects
      * - Franc multiplication
      * - TODO: remove code duplication (Dollar and Franc)
-     * - TODO: generalize equals()
+     * - generalize equals()
      * - TODO: generalize times()
      */
 
