@@ -1,6 +1,7 @@
 <?php
 
 use App\Dollar;
+use App\Franc;
 
 class MultiCurrencyMoneyTest extends TestCase
 {
@@ -15,6 +16,9 @@ class MultiCurrencyMoneyTest extends TestCase
      * - TODO: compare with null
      * - TODO: compare with other objects
      * - Franc multiplication
+     * - TODO: remove code duplication (Dollar and Franc)
+     * - TODO: generalize equals()
+     * - TODO: generalize times()
      */
 
     public function testMultiplication()
