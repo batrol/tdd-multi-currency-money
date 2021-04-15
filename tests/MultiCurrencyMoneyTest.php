@@ -14,6 +14,7 @@ class MultiCurrencyMoneyTest extends TestCase
      * - TODO: hashCode() (applicable?)
      * - TODO: compare with null
      * - TODO: compare with other objects
+     * - Franc multiplication
      */
 
     public function testMultiplication()
@@ -28,5 +29,13 @@ class MultiCurrencyMoneyTest extends TestCase
     {
         $this->assertTrue((new Dollar(5))->equals(new Dollar(5)));
         $this->assertFalse((new Dollar(5))->equals(new Dollar(6)));
+    }
+
+    public function testFrancMultiplication()
+    {
+        $franc = new Franc(5);
+
+        $this->assertEquals(new Franc(10), $franc->times(2));
+        $this->assertEquals(new Franc(15), $franc->times(3));
     }
 }
