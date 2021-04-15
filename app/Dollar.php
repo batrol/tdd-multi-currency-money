@@ -7,7 +7,7 @@ use JetBrains\PhpStorm\Pure;
 class Dollar
 {
 
-    public int $amount = 0;
+    private int $amount = 0;
 
     public function __construct(int $amount)
     {
