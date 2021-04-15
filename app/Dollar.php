@@ -7,8 +7,6 @@ use JetBrains\PhpStorm\Pure;
 class Dollar extends Money
 {
 
-    private int $amount = 0;
-
     public function __construct(int $amount)
     {
         $this->amount = $amount;
