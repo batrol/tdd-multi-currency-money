@@ -4,10 +4,8 @@ namespace App;
 
 use JetBrains\PhpStorm\Pure;
 
-class Franc
+class Franc extends Money
 {
-
-    private int $amount = 0;
 
     public function __construct(int $amount)
     {
@@ -17,10 +15,5 @@ class Franc
     #[Pure] public function times(int $multiplier): Franc
     {
         return new Franc($this->amount * $multiplier);
-    }
-
-    public function equals(Franc $comparedObject): bool
-    {
-        return $this->amount === $comparedObject->amount;
     }
 }
